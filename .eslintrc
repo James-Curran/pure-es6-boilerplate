@@ -1,6 +1,8 @@
 
 {
     "rules": {
+        "no-const-assign": 2,
+        "spaced-comment": 2,
         "no-console": 0,
         "indent": [
             2,
