@@ -1,13 +1,12 @@
 const webpack = require('webpack');
 
-
 module.exports = {
     devtool: 'none',
     entry: __dirname + '/src/index.js',
     output: {
         path: __dirname + '/build/dist',
         publicPath: '/build/dist/',
-        filename: 'bundle.js'
+        filename: 'bundle.js',
     },
     module: {
         rules: [
@@ -18,17 +17,17 @@ module.exports = {
                 exclude: /node_modules/,
                 options: {
                     emitWarning: true,
-                    configFile: './.eslintrc'
-                }
+                    configFile: './.eslintrc',
+                },
             },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
-                use: 'babel-loader'
-            }
-        ]
+                use: 'babel-loader',
+            },
+        ],
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin()
-    ]
+        new webpack.optimize.UglifyJsPlugin(),
+    ],
 };

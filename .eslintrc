@@ -35,10 +35,7 @@
         "node": true,
         "mocha": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended"
-    ],
+    "extends": "airbnb",
     "parser": "babel-eslint",
     "parserOptions": {
         "sourceType": "module",
